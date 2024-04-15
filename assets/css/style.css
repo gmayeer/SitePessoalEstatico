@@ -42,7 +42,7 @@ body{
     display: flex;
     margin: 10px 0;
     border-top: 1px solid black;
-    padding-top: 2px;
+    padding-top: 5px;
 }
 
 .pfp{
@@ -102,7 +102,22 @@ body{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+    border-top: solid black 1px;
+    padding-top: 5px;
+}
 
+.repo_logoG{
+    width: 500px;
+    height: 220px;
+}
+
+.repo_logoS{
+    width: 500px;
+    height: 220px;
+}
+
+.repo_logoD{
+    width: 220px;
 }
 
 .aula{
@@ -126,11 +141,27 @@ body{
     color: black;
 }
 
+.aula:hover, .scratch:hover, .atual:hover{
+    background-color: lightgray;
+}
+
 .visus{
     text-align: end;
     padding-right: 5px;
 }
 
+    /*Seção 3*/
+
+.sec3{
+    width: 90%;
+    margin: 10px 5% 0;
+    display: block;
+}
+
+.carousel-box{
+    border-top: solid black 1px;
+    padding-top: 5px;
+}
 
 
 
