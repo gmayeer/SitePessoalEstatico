@@ -1,0 +1,56 @@
+/* CONFIGURAÇÕES GERAIS */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*CABEÇALHO*/
+
+.barra_superior{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+.barra_superior nav {
+    display: flex;
+    gap: 80px;  
+    padding: 0 50px;
+}
+
+.logo{
+    width: 350px;
+}
+
+.botao-menu{
+    display: none;
+}
+
+
+/*CORPO DO SITE*/
+
+.perfil{
+    width: 85%;
+    margin: 0 5% 0;
+}
+
+.perfil h4{
+    display: flex;
+}
+
+.nome{
+    font-weight: bold;
+}
+
+
+/*RODAPÉ*/
+
+
+
+/*BREAKPOINT MOBILE*/
+
+@media screen and (maxwidth: 1000px){
+    
+}
