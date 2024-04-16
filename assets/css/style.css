@@ -225,9 +225,46 @@ body{
     border-top: black solid 5px;
     text-align: center;
     padding-top: 15px;
+    width: 90%;
+    margin: 25px 5% 0;
 }
 
 /*BREAKPOINT MOBILE*/
+
+@media screen and (max-width: 1400px) {
+
+    /*Seção 3*/
+    .carousel-box{
+        padding-top: 10px;
+        width: 100%;
+        margin: 0 auto;
+         text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;    
+    }
+
+    /*Seção 4*/
+    .friend img{
+        width: 100%;
+        border: solid black 3px;
+        border-radius: 50px;
+    }
+
+    .friends{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        gap: 10px;
+    }
+
+    .friend{
+        border-right: 0;
+        padding-top: 10px;
+    }
+
+}
 
 @media screen and (max-width: 1000px){
     
@@ -237,11 +274,17 @@ body{
         display: none;
     }
 
+    /*MENU MOBILE*/
+
+
+
     .botao-menu{
         display: flex;
         background-color: transparent;
         border: 0;
     }
+
+
 
     /*CORPO DO SITE*/
 
@@ -258,6 +301,14 @@ body{
         margin: 0 auto; 
     }
         /*Seção 4*/
+    
+    .sec4{
+            width: 90%;
+            margin: 25px 5% 0;
+            display: block;
+            scroll-margin-top: 60px;
+    }
+    
     .friends{
         grid-template-columns: repeat(1, 12fr);
     }
@@ -266,5 +317,37 @@ body{
         border-right: 0;
         padding-top: 10px;
     }
+
+    .friend img{
+    width: 100%;
+    border: solid black 3px;
+    border-radius: 50px;
+    }
+
 }
+
+/*HTML REPOSITÓRIOS*/
+
+.repositorio-box{
+    width: 90%;
+    margin: 0 5% 0;
+    display: block;
+}
+
+.descricao{
+    display: block;
+    margin: 10px 0;
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+
+.topic{
+    display: inline;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 5px;
+    background-color: lightgray;
+}
+
     
