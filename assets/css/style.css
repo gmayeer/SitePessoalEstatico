@@ -12,12 +12,21 @@ body{
     justify-content: space-between;
     width: 100%;
     align-items: center;
-
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
 }
-.barra_superior nav {
+.navegacao {
     display: flex;
     gap: 80px;  
     padding: 0 50px;
+}
+
+.navegacao h5:hover{
+    text-decoration: underline  ;
 }
 
 .logo{
@@ -80,6 +89,10 @@ body{
     margin-top: 1%;
 }
 
+.contatos_din a :hover{
+    background-color: lightgray;
+}
+
 .interacoes{
     display: flex;
     margin: 20px 5px;
@@ -98,59 +111,33 @@ body{
     display: block;
 }
 
-.repositorios{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    border-top: solid black 1px;
-    padding-top: 5px;
+.sec2 h4{
+    border-bottom: solid black 1px;
+    padding-bottom: 10px;
 }
 
-.repo_logoG{
-    width: 500px;
-    height: 220px;
-}
-
-.repo_logoS{
-    width: 500px;
-    height: 220px;
-}
-
-.repo_logoD{
-    width: 220px;
-}
-
-.aula{
-    border: black solid 2px;
-    text-align: center;
+.sec2 a{
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
-.scratch{
-    border: black solid 2px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
+.card-img-top{
+    height: 200px;
+    width: 100px;
+    padding: 30px;
 }
 
-.atual{
-    border: black solid 2px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
+.card{
+    margin: 10px 0  ;
 }
 
-.aula:hover, .scratch:hover, .atual:hover{
+.card:hover{
     background-color: lightgray;
 }
+    
 
-.visus{
-    text-align: end;
-    padding-right: 5px;
-}
+/*Seção 3*/
 
-    /*Seção 3*/
 
 .sec3{
     width: 90%;
@@ -171,6 +158,27 @@ body{
 
 /*BREAKPOINT MOBILE*/
 
-@media screen and (maxwidth: 1000px){
+@media screen and (max-width: 1000px){
     
+    /*CABEÇALHO*/
+    
+    .navegacao{
+        display: none;
+    }
+
+    .botao-menu{
+        display: flex;
+        background-color: transparent;
+        border: 0;
+    }
+
+/*CORPO DO SITE*/
+
+    
+    .conteudos{
+        flex-direction: column;
+    }
+
+
 }
+    
