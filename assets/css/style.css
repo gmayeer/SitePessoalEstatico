@@ -9,6 +9,7 @@ body{
 }
 
 .undestaque{
+    transition: .3s;
     background-color: inherit;
 }
 
@@ -168,17 +169,63 @@ body{
 }
 
 .carousel-box{
-    
     padding-top: 10px;
     width: 1080px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;    
 }
 
+/*Seção 4*/
+
+.sec4{
+        width: 90%;
+        margin: 25px 5% 0;
+        display: block;
+        scroll-margin-top: 60px;
+}
+
+.sec4 h4{
+    border-bottom: solid black 1px;
+    padding-bottom: 10px;
+}
+
+.friends{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.friend{
+    border-right: black solid 1px;
+    padding-top: 10px;
+}
+
+.seva{
+    border-right: 0;
+}
+
+.friend h6{
+    font-weight: bold;
+}
+
+.friend img{
+    width: 400px;
+    border: solid black 3px;
+    border-radius: 50px;
+}
 
 
 /*RODAPÉ*/
 
-
+.rodape{
+    border-top: black solid 5px;
+    text-align: center;
+    padding-top: 15px;
+}
 
 /*BREAKPOINT MOBILE*/
 
@@ -196,19 +243,28 @@ body{
         border: 0;
     }
 
-/*CORPO DO SITE*/
+    /*CORPO DO SITE*/
 
     
+        /*Seção 1*/
     .conteudos{
         flex-direction: column;
     }
 
+        /*Seção 3*/
     .carousel-box{
         padding-top: 10px;
         width: 100%;
         margin: 0 auto; 
     }
+        /*Seção 4*/
+    .friends{
+        grid-template-columns: repeat(1, 12fr);
+    }
 
-
+    .friend{
+        border-right: 0;
+        padding-top: 10px;
+    }
 }
     
