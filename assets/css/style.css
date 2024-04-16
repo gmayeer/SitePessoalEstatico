@@ -77,12 +77,13 @@ body{
 .textos-int{
     display:block;
 }
+
 .nome{
     font-weight: bold;
     font-size: larger;
 }
 
-.intrdoducao{
+.introducao{
     padding: 15px 30px;
 }
 
@@ -158,11 +159,19 @@ body{
     width: 90%;
     margin: 10px 5% 0;
     display: block;
+    scroll-margin-top: 60px;
+}
+
+.sec3 h4{
+    border-bottom: solid black 1px;
+    padding-bottom: 10px;
 }
 
 .carousel-box{
-    border-top: solid black 1px;
-    padding-top: 5px;
+    
+    padding-top: 10px;
+    width: 1080px;
+    margin: 0 auto; 
 }
 
 
@@ -192,6 +201,12 @@ body{
     
     .conteudos{
         flex-direction: column;
+    }
+
+    .carousel-box{
+        padding-top: 10px;
+        width: 100%;
+        margin: 0 auto; 
     }
 
 
