@@ -281,6 +281,10 @@ body{
         width: 100%;
         z-index: 100;
     }
+
+    .logo{
+        width: 80%;
+    }
     
     .menu{
         display: flex;
